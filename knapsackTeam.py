@@ -198,12 +198,13 @@ def makeTeam(playerList, spotsL, money):
     """Randomly creates a valid fantasy hockey team: spotsL is a list of open
     positions of the form [G, C, W, D] and will normally be [2, 2, 3, 2], money
     is the funds available to buy players"""
-    myTeam=[]
+
     posL = ['G','C','W','D']
 
     finished = False
     attempt = 0
     while not finished:
+        myTeam = []
         budget = money
 
         for i in range(len(posL)):
