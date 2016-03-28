@@ -38,6 +38,7 @@ class Player:
         self.PIM = 0
         
     def __repr__(self):
-        return self.name+" who plays for the "+self.team
+        return self.name+" who plays for "+self.team
+    
     
     
