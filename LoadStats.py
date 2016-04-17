@@ -36,7 +36,9 @@ def getPlayer(name, season):
 ##        else:
 ##            c = c + 1
 
-    traitL = ["G","Assists","Shots on Goal","TOI"]
+    traitL = ["G","Assists","TOI", "Shifts", "Games", "Shots on Goal",
+              "Takeaways", "Giveaways", "Blocks", "Hits", "Faceoffs",
+              "Won", "PIMs"]
     toAdd = []
     for trait in traitL:
         c = 2
@@ -50,10 +52,20 @@ def getPlayer(name, season):
     
     p.goals = int(toAdd[0])
     p.assists = int(toAdd[1])
-    p.SOG = int(toAdd[2])
-    y = noComma(toAdd[3])
+    y = noComma(toAdd[2])
     p.TOI = int(y)
-
+    y = noComma(toAdd[3])
+    p.shifts = int(y)
+    p.gamesPlayed = int(toAdd[4])
+    p.SOG = int(toAdd[5])
+    p.takeaways = int(toAdd[6])
+    p.giveaways = int(toAdd[7])
+    p.blocks = int(toAdd[8])
+    p.hits = int(toAdd[9])
+    p.faceoffs = int(toAdd[10])
+    p.faceoffWins = int(toAdd[11])
+    p.PIM = int(toAdd[12])
+    
     return p # end line
 
 def noComma(x):
