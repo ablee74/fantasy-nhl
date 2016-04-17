@@ -49,6 +49,8 @@ def getPlayer(name, season):
                 toAdd.append(ws.cell(row = r, column = c).value)
             else:
                 c = c + 1
+
+    toAdd = blankConvert(toAdd)
     
     p.goals = int(toAdd[0])
     p.assists = int(toAdd[1])
@@ -78,7 +80,48 @@ def noComma(x):
 
     return y
 
+def blankConvert(L):
+    """L is a list that represents player stats, changing BLANK on
+    excel sheet to an integer aka 0"""
+    for i in range(len(L)):
+        if L[i] == 'BLANK':
+            L[i] = '0'
+
+    return L
+
+def getRoster(team, season):
+    """This will pull all players from a certain team to evaluate
+    performance against another team"""
+    global wb
+    ws = wb.get_sheet_by_name(season)
+    notFound = True
+    r = 5   #teams start at row 5
+    while notFound and ws.cell(row = r, column = 2).value != None:
+        if ws.cell(row = r, column = 2).value == team:
+            notFound = False
+        else:
+            r = r + 1
+
+    roster = []
+
+    while ws.cell(row = r, column = 2).value == team:
+        p = getPlayer(ws.cell(row = r, column = 1).value, season)
+        roster.append(p)
+        r = r + 1
+
+    return roster
+    
         
+            
+        
+    
+
+
+    
+    
+
+    
+    
     
 
 
