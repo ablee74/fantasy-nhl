@@ -28,14 +28,6 @@ def getPlayer(name, season):
 
     p = Player(name, ws.cell(row = r, column = c).value)
 
-##    c = 2
-##    notFound = True
-##    while notFound and ws.cell(row = 4, column = c).value != None:
-##        if ws.cell(row = 4, column = c).value == "G":
-##            notFound = False
-##        else:
-##            c = c + 1
-
     traitL = ["G","Assists","TOI", "Shifts", "Games", "Shots on Goal",
               "Takeaways", "Giveaways", "Blocks", "Hits", "Faceoffs",
               "Won", "PIMs"]
@@ -70,6 +62,25 @@ def getPlayer(name, season):
     
     return p # end line
 
+def getHistory(season, name, stat):
+    """This will read player stats by game spreadsheets to track stats per
+    game in a season -- To be added to Player Object"""
+    wb = openpyxl.load_workbook(season + '.xlsx')
+    ws = wb.get_sheet_by_name(name)
+    notFound = True
+    c = 1   #First column in spreadsheet
+    while notFound and ws.cell(row = 4, column = c).value != None:
+        if ws.cell(row = 4, column = c).value == stat:
+            notFound = False
+        else:
+            c = c + 1
+    hL = []
+    r = 5
+    while ws.cell(row = r, column = c).value != None:
+        hL.append(ws.cell(row = r, column = c).value)
+        r = r + 1
+    return hL
+    
 def noComma(x):
     """x is a string that represents a number, it has commas every 3
     digits"""
