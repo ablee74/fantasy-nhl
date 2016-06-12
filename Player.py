@@ -15,6 +15,8 @@
 # Faceoffs
 # Faceoff wins
 # PIM
+# Goal History
+# Assist History
 
 class Player:
     """Represents an NHL Player"""
@@ -56,6 +58,12 @@ class Player:
         s = s + "PIM: " + str(self.PIM) + "\n"
         
         return s
-    
+
+class Goalie:
+    def __init__(self, name, team):
+        self.name = name
+        self.team = team
+        ##enter goalie stats below
+        self.
   
     

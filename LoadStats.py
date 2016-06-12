@@ -2,6 +2,7 @@
 #to player class objects
 import openpyxl
 from Player import *
+from Team import *
 wb = openpyxl.load_workbook('Player Database.xlsx')
 
 
