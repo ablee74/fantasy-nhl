@@ -53,11 +53,36 @@ def sample():
 
 def reprGraph(graph):
     '''takes a graph and draws/displays it for the user'''
-    pos = nx.spring_layout(graph)
+   
+    #Start of spring graph
+    pos = nx.spring_layout(graph,scale=5)
+    node1L = []
+    node2L = []
+    nodeL = []
+    for node in graph.nodes():
+        if "1" in node:
+            node1L.append(node)
+        elif "2" in node:
+            node2L.append(node)
+        else:
+            nodeL.append(node)
+
+    nodes1 = nx.draw_networkx_nodes(graph,
+                                    pos,
+                                    node1L,
+                                    node_color = 'r')
+    nodes2 = nx.draw_networkx_nodes(graph,
+                                    pos,
+                                    node2L,
+                                    node_color = 'b')
     nodes = nx.draw_networkx_nodes(graph,
                                    pos,
-                                   graph.nodes(),
-                                   node_color='r')
+                                   nodeL,
+                                   node_color = 'g')
+##    nodes = nx.draw_networkx_nodes(graph,
+##                                   pos,
+##                                   graph.nodes(),
+##                                   node_color='r')
     edges = nx.draw_networkx_edges(graph,
                                    pos,
                                    graph.edges(),
@@ -71,7 +96,8 @@ def reprGraph(graph):
     labels = nx.draw_networkx_labels(graph,
                                      pos,
                                      labelsDict)
-    plt.show([nodes,edges,labels])
+    
+    plt.show([nodes1,nodes2,nodes,edges,labels])
     
 #Now we're going to create the graph that describes a hockey match in much more
 # detail. When you're ready, uncomment the code below the horizontal line. To do
@@ -138,6 +164,10 @@ MC.add_node(score1)
 MC.add_edge(faceoff,LW1HasPuck)
 #LW1 passes to Center1
 MC.add_edge(LW1HasPuck,C1HasPuck)
+#LW1 passes to RW1
+MC.add_edge(LW1HasPuck,RW1HasPuck)
+#RW1 passes to Center1
+MC.add_edge(RW1HasPuck,C1HasPuck)
 #Center1 passes to LW1
 MC.add_edge(C1HasPuck,LW1HasPuck)
 
