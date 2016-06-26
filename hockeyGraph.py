@@ -82,67 +82,86 @@ def reprGraph(graph):
 
 ##############################################################################
 
-##MC = nx.DiGraph() #MC is short for Markov Chain
-##
-###Create our nodes (stages of the game), represented by strings
-##
-###Add new stages and change the existing stages
-###example: if a defender blocks a shot, will they most likely have possession of
-###         the puck? instead of D2aBlocks, should there just be D2aHasPuck?
-###Some places to start:
-###  RW1 should be able to shoot
-###  team2 should be able to pass and shoot
-###  various forms of gva/tka between the two teams
-###  penalties
-##
-##faceoff = 'faceoff'
-##MC.add_node(faceoff)
-##LW1HasPuck = 'LW1 has puck'
-##MC.add_node(LW1HasPuck)
-##LW1Shoots = 'LW1 shoots'
-##MC.add_node(LW1Shoots)
-##C1HasPuck = 'Center1 has puck'
-##MC.add_node(C1HasPuck)
-##C1Shoots = 'Center1 shoots'
-##MC.add_node(C1Shoots)
-##D2aBlocks = 'Def2a blocks shot'
-##MC.add_node(D2aBlocks)
-##D2bBlocks = 'Def2b blocks shot'
-##MC.add_node(D2bBlocks)
-##G2Saves = 'Goalie2 makes a save'
-##MC.add_node(G2Saves)
-##score1 = 'team1 scores'
-##MC.add_node(score1)
-##
-###Create our edges (transitions between stages)
-##
-###Faceoff results in LW1 getting the puck
-##MC.add_edge(faceoff,LW1HasPuck)
-###LW1 passes to Center1
-##MC.add_edge(LW1HasPuck,C1HasPuck)
-###Center1 passes to LW1
-##MC.add_edge(C1HasPuck,LW1HasPuck)
-##
-###LW1 shoots
-##MC.add_edge(LW1HasPuck,LW1Shoots)
-###Def2a blocks LW1's shot
-##MC.add_edge(LW1Shoots,D2aBlocks)
-###Def2b blocks LW1's shot
-##MC.add_edge(LW1Shoots,D2bBlocks)
-###Goalie2 blocks LW1's shot
-##MC.add_edge(LW1Shoots,G2Saves)
-###LW1 scores a goal
-##MC.add_edge(LW1Shoots,score1)
-##
-###C1 shoots
-##MC.add_edge(C1HasPuck,C1Shoots)
-###Def2a blocks C1's shot
-##MC.add_edge(C1Shoots,D2aBlocks)
-###Def2b blocks C1's shot
-##MC.add_edge(C1Shoots,D2bBlocks)
-###Goalie2 blocks C1's shot
-##MC.add_edge(C1Shoots,G2Saves)
-###C1 scores a goal
-##MC.add_edge(C1Shoots,score1)
-##
-##reprGraph(MC)
+MC = nx.DiGraph() #MC is short for Markov Chain
+
+#Create our nodes (stages of the game), represented by strings
+
+#Add new stages and change the existing stages
+#example: if a defender blocks a shot, will they most likely have possession of
+#         the puck? instead of D2aBlocks, should there just be D2aHasPuck?
+#Some places to start:
+#  RW1 should be able to shoot
+#  team2 should be able to pass and shoot
+#  various forms of gva/tka between the two teams
+#  penalties
+
+faceoff = 'faceoff'
+MC.add_node(faceoff)
+RW1HasPuck = 'RW 1 has puck'
+MC.add_node(RW1HasPuck)
+LW1HasPuck = 'LW 1 has puck'
+MC.add_node(LW1HasPuck)
+D1LHasPuck = 'Def1-L has puck'
+MC.add_node(D1LHasPuck)
+D1RHasPuck = 'Def1-R has puck'
+MC.add_node(D1RHasPuck)
+RW2HasPuck = 'RW 2 has puck'
+MC.add_node(RW2HasPuck)
+LW2HasPuck = 'LW 2 has puck'
+MC.add_node(LW2HasPuck)
+C2HasPuck = 'Center 2 has puck'
+MC.add_node(C2HasPuck)
+D2LHasPuck = 'Def2-L has puck'
+MC.add_node(D2LHasPuck)
+D2RHasPuck = 'Def2-R has puck'
+MC.add_node(D2RHasPuck)
+LW1Shoots = 'LW1 shoots'
+MC.add_node(LW1Shoots)
+C1HasPuck = 'Center1 has puck'
+MC.add_node(C1HasPuck)
+C1Shoots = 'Center1 shoots'
+MC.add_node(C1Shoots)
+D2LBlocks = 'Def2-L blocks shot'
+MC.add_node(D2LBlocks)
+D2RBlocks = 'Def2-R blocks shot'
+MC.add_node(D2RBlocks)
+G1Saves = 'Goalie1 makes a save'
+MC.add_node(G1Saves)
+G2Saves = 'Goalie2 makes a save'
+MC.add_node(G2Saves)
+score1 = 'team1 scores'
+MC.add_node(score1)
+
+#Create our edges (transitions between stages)
+
+#Faceoff results in LW1 getting the puck
+MC.add_edge(faceoff,LW1HasPuck)
+#LW1 passes to Center1
+MC.add_edge(LW1HasPuck,C1HasPuck)
+#Center1 passes to LW1
+MC.add_edge(C1HasPuck,LW1HasPuck)
+
+#LW1 shoots
+MC.add_edge(LW1HasPuck,LW1Shoots)
+#Def2-L blocks LW1's shot
+MC.add_edge(LW1Shoots,D2LBlocks)
+#Def2-R blocks LW1's shot
+MC.add_edge(LW1Shoots,D2RBlocks)
+#Goalie2 blocks LW1's shot
+MC.add_edge(LW1Shoots,G2Saves)
+#LW1 scores a goal
+MC.add_edge(LW1Shoots,score1)
+
+#C1 shoots
+MC.add_edge(C1HasPuck,C1Shoots)
+#Def2-L blocks C1's shot
+MC.add_edge(C1Shoots,D2LBlocks)
+#Def2-R blocks C1's shot
+MC.add_edge(C1Shoots,D2RBlocks)
+#Goalie2 blocks C1's shot
+MC.add_edge(C1Shoots,G2Saves)
+#C1 scores a goal
+MC.add_edge(C1Shoots,score1)
+
+reprGraph(MC)
+
