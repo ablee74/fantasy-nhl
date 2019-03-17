@@ -1,0 +1,101 @@
+Name,Team,Opp,Score,Sacks,Sack Yds,QB Hits,Tackles,Assists,Fumbles Forced,Fumbles Recovered
+Fletcher Cox,PHI,vs NO,W  39-17,3.0,25.0,3,6,0,2,1
+Lawrence Guy,BAL,vs CLE,L  30-33,2.0,15.0,3,3,3,0,0
+Greg Hardy,DAL,vs NE,L  6-30,2.0,7.0,5,4,1,1,0
+Howard Jones,TB,vs,W  38-31,2.0,15.0,2,2,0,0,0
+Ryan Kerrigan,WAS,@ ATL,L  19-25,2.0,12.0,2,3,0,0,0
+Damontre Moore,NYG,vs SF,W  30-27,2.0,6.0,2,3,0,1,0
+Jabaal Sheard,NE,@ DAL,W  30-6,2.0,15.0,3,3,0,0,0
+Allen Bailey,KC,vs CHI,L  17-18,1.5,7.0,2,5,2,1,0
+Jurrell Casey,TEN,vs BUF,L  13-14,1.5,5.5,2,4,2,0,0
+Carlos Dunlap,CIN,vs SEA,W  27-24,1.5,11.0,6,3,3,0,0
+Clay Matthews,GB,vs,W  24-10,1.5,11.5,4,3,2,0,0
+Gerald McCoy,TB,vs,W  38-31,1.5,5.5,2,1,2,0,0
+Derrick Morgan,TEN,vs BUF,L  13-14,1.5,13.5,2,1,2,0,0
+Kwon Alexander,TB,vs,W  38-31,1.0,5.5,2,3,2,0,0
+Ezekiel Ansah,DET,vs ARI,L  17-42,1.0,7.0,2,1,0,0,0
+Geno Atkins,CIN,vs SEA,W  27-24,1.0,0.0,1,2,2,0,0
+Cliff Avril,SEA,@ CIN,L  24-27,1.0,7.0,1,4,2,0,0
+Chris Baker,WAS,@ ATL,L  19-25,1.0,0.0,1,2,0,2,0
+Shaquil Barrett,DEN,@ OAK,W  16-10,1.0,7.0,1,2,2,0,0
+Michael Bennett,SEA,@ CIN,L  24-27,1.0,6.0,1,5,1,1,0
+Bryan Braman,PHI,vs NO,W  39-17,1.0,11.0,1,1,0,0,0
+Michael Brockers,,@ GB,L  10-24,1.0,3.0,1,2,1,0,0
+Armonty Bryant,CLE,@ BAL,W  33-30,1.0,14.0,1,2,3,0,0
+Aaron Colvin,,@ TB,L  31-38,1.0,14.0,1,5,1,0,0
+Jack Crawford,DAL,vs NE,L  6-30,1.0,4.0,1,1,0,0,0
+Tyrone Crawford,DAL,vs NE,L  6-30,1.0,8.0,1,3,1,0,0
+Lavonte David,TB,vs,W  38-31,1.0,4.0,1,8,2,0,0
+Bud Dupree,PIT,@,W  24-20,1.0,4.0,1,2,0,0,0
+Dont'a Hightower,NE,@ DAL,W  30-6,1.0,9.0,1,4,0,0,0
+Lamarr Houston,CHI,@ KC,W  18-17,1.0,1.0,1,3,0,0,0
+Malik Jackson,DEN,@ OAK,W  16-10,1.0,5.0,1,5,1,0,0
+Timmy Jernigan,BAL,vs CLE,L  30-33,1.0,11.0,1,1,0,0,0
+Adam Jones,CIN,vs SEA,W  27-24,1.0,1.0,0,4,1,0,0
+Jarvis Jones,PIT,@,W  24-20,1.0,7.0,1,4,1,1,0
+Jason Jones,DET,vs ARI,L  17-42,1.0,6.0,1,1,0,0,0
+Corey Liuget,,vs PIT,L  20-24,1.0,3.0,1,2,0,0,0
+Bennie Logan,PHI,vs NO,W  39-17,1.0,7.0,1,4,1,0,0
+Ricardo Mathews,,vs PIT,L  20-24,1.0,4.0,1,1,1,0,0
+Rolando McClain,DAL,vs NE,L  6-30,1.0,9.0,1,4,4,0,0
+Pernell McPhee,CHI,@ KC,W  18-17,1.0,2.0,1,1,1,0,0
+Roy Miller,,@ TB,L  31-38,1.0,9.0,1,1,4,0,0
+Von Miller,DEN,@ OAK,W  16-10,1.0,7.0,2,2,0,1,1
+Julius Peppers,GB,vs,W  24-10,1.0,3.0,3,2,0,1,0
+Jerraud Powers,ARI,@ DET,W  42-17,1.0,0.0,1,9,2,0,0
+Robert Quinn,,@ GB,L  10-24,1.0,2.0,1,4,2,1,0
+Shane Ray,DEN,@ OAK,W  16-10,1.0,7.0,1,1,0,0,0
+Ahtyba Rubin,SEA,@ CIN,L  24-27,1.0,3.0,1,3,1,0,0
+DeShawn Shead,SEA,@ CIN,L  24-27,1.0,5.0,1,4,1,0,0
+Malcolm Smith,OAK,vs DEN,L  10-16,1.0,8.0,2,3,0,0,0
+Darrell Stuckey,,vs PIT,L  20-24,1.0,2.0,0,1,0,0,0
+Nathan Stupar,ATL,vs WAS,W  25-19,1.0,0.0,1,3,1,0,0
+Erik Walden,IND,@ HOU,W  27-20,1.0,0.0,3,3,0,0,0
+Mario Williams,BUF,@ TEN,W  14-13,1.0,5.0,2,1,2,0,0
+Brandon Williams,BAL,vs CLE,L  30-33,1.0,9.0,1,3,0,0,0
+Kyle Williams,BUF,@ TEN,W  14-13,1.0,3.0,1,3,1,0,0
+Avery Williamson,TEN,vs BUF,L  13-14,1.0,12.0,1,7,2,0,0
+Willie Young,CHI,@ KC,W  18-17,1.0,8.0,1,1,0,0,0
+Mario Edwards,OAK,vs DEN,L  10-16,0.5,2.0,1,3,3,0,0
+Jaye Howard,KC,vs CHI,L  17-18,0.5,4.0,1,3,3,0,0
+Emmanuel Lamur,CIN,vs SEA,W  27-24,0.5,4.0,1,0,3,0,0
+Nick Perry,GB,vs,W  24-10,0.5,3.5,1,0,2,0,0
+Aldon Smith,OAK,vs DEN,L  10-16,0.5,2.0,1,1,3,0,0
+Alterraun Verner,TB,vs,W  38-31,0.5,3.0,1,4,1,0,0
+Uani 'Unga,NYG,vs SF,W  30-27,0.0,0.0,0,7,0,0,0
+Husain Abdullah,KC,vs CHI,L  17-18,0.0,0.0,0,3,1,0,0
+Ameer Abdullah,DET,vs ARI,L  17-42,0.0,0.0,0,0,0,0,0
+Sam Acho,CHI,@ KC,W  18-17,0.0,0.0,0,5,0,0,0
+Kenneth Acker,SF,@ NYG,L  27-30,0.0,0.0,0,3,1,0,0
+Mike Adams,IND,@ HOU,W  27-20,0.0,0.0,0,3,1,0,0
+Phillip Adams,ATL,vs WAS,W  25-19,0.0,0.0,0,4,0,1,0
+Jahleel Addae,,vs PIT,L  20-24,0.0,0.0,0,1,0,0,0
+Robert Alford,ATL,vs WAS,W  25-19,0.0,0.0,0,1,0,0,0
+Will Allen,PIT,@,W  24-20,0.0,0.0,0,2,0,0,0
+Ricardo Allen,ATL,vs WAS,W  25-19,0.0,0.0,0,2,1,0,0
+Beau Allen,PHI,vs NO,W  39-17,0.0,0.0,0,2,0,0,0
+Tyson Alualu,,@ TB,L  31-38,0.0,0.0,1,4,0,0,0
+David Amerson,OAK,vs DEN,L  10-16,0.0,0.0,0,4,1,0,0
+Adrian Amos,CHI,@ KC,W  18-17,0.0,0.0,0,2,0,0,0
+Prince Amukamara,NYG,vs SF,W  30-27,0.0,0.0,0,5,1,0,0
+C.J. Anderson,DEN,@ OAK,W  16-10,0.0,0.0,0,0,0,0,0
+Henry Anderson,IND,@ HOU,W  27-20,0.0,0.0,0,3,1,0,0
+Stephone Anthony,NO,@ PHI,L  17-39,0.0,0.0,0,9,0,0,0
+Thurston Armbrister,,@ TB,L  31-38,0.0,0.0,1,5,1,0,0
+Kyle Arrington,BAL,vs CLE,L  30-33,0.0,0.0,0,3,0,0,0
+Larry Asante,OAK,vs DEN,L  10-16,0.0,0.0,0,0,0,0,0
+Jeremiah Attaochu,,vs PIT,L  20-24,0.0,0.0,2,7,2,0,0
+Tavon Austin,,@ GB,L  10-24,0.0,0.0,0,0,0,0,0
+Jonathan Babineaux,ATL,vs WAS,W  25-19,0.0,0.0,1,2,0,0,0
+Johnson Bademosi,CLE,@ BAL,W  33-30,0.0,0.0,0,0,0,0,0
+Neiron Ball,OAK,vs DEN,L  10-16,0.0,0.0,0,2,0,0,0
+Chris Banjo,GB,vs,W  24-10,0.0,0.0,0,3,0,0,0
+Tavaris Barnes,NO,@ PHI,L  17-39,0.0,0.0,0,1,0,0,0
+Mark Barron,,@ GB,L  10-24,0.0,0.0,0,3,2,0,0
+Lamin Barrow,CHI,@ KC,W  18-17,0.0,0.0,0,0,0,0,0
+Joplo Bartu,ATL,vs WAS,W  25-19,0.0,0.0,0,1,0,0,0
+Connor Barwin,PHI,vs NO,W  39-17,0.0,0.0,1,2,0,0,0
+David Bass,TEN,vs BUF,L  13-14,0.0,0.0,0,0,0,0,0
+Daren Bates,,@ GB,L  10-24,0.0,0.0,0,1,0,0,0
+Vic Beasley,ATL,vs WAS,W  25-19,0.0,0.0,0,1,0,0,0
+Nick Bellore,SF,@ NYG,L  27-30,0.0,0.0,0,0,0,0,0
